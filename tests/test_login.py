@@ -1,4 +1,5 @@
 import pytest
+import allure
 from selenium import webdriver
 
 def get_links():
@@ -9,6 +10,9 @@ def get_links():
     return [link.strip() for link in links]
 
 @pytest.mark.parametrize("link", get_links())
+@allure.feature("Моя фича")
+@allure.story("Мой сценарий")
+@allure.title("Тест на заголовок страницы")
 def test_links(link):
     # Запускаем веб-браузер перед каждым тестом
     driver = webdriver.Chrome()  # Укажите путь к исполняемому файлу браузера, если он отличается от Chrome
