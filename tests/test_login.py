@@ -1,5 +1,5 @@
 import pytest
-import collections
+from collections.abc import Mapping
 import allure
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
