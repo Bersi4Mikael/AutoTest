@@ -1,35 +1,6 @@
-<<<<<<< HEAD
-[{"data":{"run":4,"retry":0}},{"data":{"run":4,"retry":0}}]
-=======
 [ {
   "data" : {
     "run" : 0,
     "retry" : 0
   }
-}, {
-  "data" : {
-    "run" : 0,
-    "retry" : 0
-  }
-}, {
-  "data" : {
-    "run" : 0,
-    "retry" : 0
-  }
-}, {
-  "data" : {
-    "run" : 0,
-    "retry" : 0
-  }
-}, {
-  "data" : {
-    "run" : 0,
-    "retry" : 0
-  }
-}, {
-  "data" : {
-    "run" : 0,
-    "retry" : 0
-  }
 } ]
->>>>>>> 1679b9e927e72219d7afd3193412dd478172ffd1
