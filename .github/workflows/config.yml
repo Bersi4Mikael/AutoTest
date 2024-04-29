@@ -1,13 +1,28 @@
 name: UI Tests
 
 on: workflow_dispatch
+name: Your Workflow Name
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  ui-tests:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Checkout (copy) gh-pages repository to GitHub runner
         uses: actions/checkout@v2
