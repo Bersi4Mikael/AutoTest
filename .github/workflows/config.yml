@@ -22,7 +22,6 @@ jobs:
         run: |
           docker-compose up --exit-code-from regression || true
 
-    
       - name: Generate Allure report
         run: |
           sudo docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
