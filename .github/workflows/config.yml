@@ -43,5 +43,4 @@ jobs:
            token: ${{ secrets.AUTO_TEST }}
            branch: gh-pages
            folder: allure-report
-           clean: true
        
