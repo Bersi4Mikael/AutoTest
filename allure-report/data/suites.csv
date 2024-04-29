@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Apr 29 16:40:11 UZT 2024","Mon Apr 29 16:40:36 UZT 2024","24410","tests","test_login","","","","Тест на заголовок страницы",""
+"failed","Mon Apr 29 16:41:40 UZT 2024","Mon Apr 29 16:42:30 UZT 2024","50397","tests","test_login","","","","Тест на заголовок страницы",""
+"failed","Mon Apr 29 16:40:36 UZT 2024","Mon Apr 29 16:41:20 UZT 2024","44303","tests","test_login","","","","Тест на заголовок страницы",""
+"passed","Mon Apr 29 16:41:20 UZT 2024","Mon Apr 29 16:41:40 UZT 2024","19808","tests","test_login","","","","Тест на заголовок страницы",""
