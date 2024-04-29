@@ -11,9 +11,6 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Checkout (copy) gh-pages repository to GitHub runner
         uses: actions/checkout@v2
         with:
@@ -30,8 +27,8 @@ jobs:
       - name: Copy history from gh-pages to allure-results
         run: |
           sudo mkdir -p allure-results/history  # Создает директорию для истории Allure
-          sudo cp -R allure-results/* ./.github/gh-pages/
-          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+          sudo cp -R allure-results/. ./.github/gh-pages/
+          sudo cp -R ./.github/gh-pages/history/. allure-results/history/
 
       - name: Generate Allure report
         run: |
