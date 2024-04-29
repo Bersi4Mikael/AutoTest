@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
 
       - name: Checkout (copy) main repository to GitHub runner
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           ref: main
           path: ./.github/main
